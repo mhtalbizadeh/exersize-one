@@ -1,7 +1,7 @@
-var start1 = 2;
-var height1 = 0;
-var start2 = 1;
-var height2 = 500;
+var start1 = 0;
+var height1 = 2;
+var start2 = 500;
+var height2 = 1;
 //Sets the value
 var Kangaroo = [start1,height1 , start2 ,height2];
 //Coverst a array.
@@ -16,9 +16,9 @@ function Compariso( Kangaroo = [start1,height1 , start2 ,height2])
     var counter  = 0 ;
     var Distances = [] ;
     //Build a new array for distances.
-    one :while(indexI<10)
+    one :while(indexI=1)
     {
-        sumKangarooOne += Kangaroo[1];
+        sumKangarooOne += Kangaroo[indexI];
         sumKangarooTwo += Kangaroo[indexJ];
         //Addition of heights.
         Space = sumKangarooOne - sumKangarooTwo ;
@@ -28,7 +28,7 @@ function Compariso( Kangaroo = [start1,height1 , start2 ,height2])
         Distances.push(Space) ;
         //Add  space to the array.
         counter++ ;
-        indexI++;
+        console.log(Distances);
         if(counter>=4)
         {
             //Because the array  length reaches four.
